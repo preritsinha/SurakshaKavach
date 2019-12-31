@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Path Finder</title>
+    <meta charset="UTF-8">
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.41.0/maps/maps-web.min.js'></script>
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.41.0/services/services-web.min.js'></script>
+    <script src='https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/1.0.7//SearchBox-web.js'></script>
+    <script src='./index.js'></script>
+
+
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.41.0/maps/maps.css'>
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/plugins/SearchBox/1.0.7//SearchBox.css' />
+    <link rel='stylesheet' type='text/css' href='https://api.tomtom.com/maps-sdk-for-web/cdn/5.x/5.41.0/maps/css-styles/poi.css' />
+    <link rel='stylesheet' type='text/css' href='./index.css' />
+    
+</head>
+
+<body>
+    <div id="inputs">
+        <center>
+            <h1>Path Finder</h1>
+            <input type="text" placeholder="start location" id="from" onchange="">
+            <span id="ts">to</span>
+            <input type="text" placeholder="destination" id='to'>
+            <button onclick="search()">Search !</button>
+        
+        <button onclick="getLocation()" id="myloc">Get My Location</button>
+        </center>
+    </div>
+
+    <div id="map">
+    </div>
+</body>
+
+</html>

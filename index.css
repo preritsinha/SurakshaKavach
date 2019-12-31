@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+#inputs {
+    padding-bottom: 10vh;
+}
+
+#map {
+    height: 80vh;
+    width: 100vw;
+}
+#myloc{
+    margin-left: 39px;
+    margin-top: 10px;
+}
